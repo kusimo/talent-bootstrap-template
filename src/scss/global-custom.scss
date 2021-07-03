@@ -1,8 +1,6 @@
 /** Reset Bootstrap Global variables ***/
 a {
-    &:hover {
-      color: $primary;
-    }
+
     &:focus {
         color: rgba($primary, .5);
     }
