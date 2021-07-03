@@ -1,0 +1,90 @@
+#header {
+  height: 100px;
+  transition: all 0.5s;
+  z-index: 997;
+  transition: all 0.5s;
+  background: #fff;
+  box-shadow: 0 4px 10px -3px rgba(191, 191, 191, 0.5); }
+  @media (max-width: 992px) {
+    #header {
+      height: 70px; } }
+  #header .nav-menu, #header .nav-menu * {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  #header .nav-menu {
+    width: 100%; }
+    #header .nav-menu .nav-inner {
+      display: flex;
+      justify-content: space-around;
+      align-items: center; }
+      #header .nav-menu .nav-inner a {
+        display: block;
+        position: relative;
+        color: #151515;
+        padding: 15px 25px;
+        transition: 0.3s;
+        font-size: 15px;
+        text-transform: uppercase;
+        text-decoration: none; }
+        #header .nav-menu .nav-inner a:active, #header .nav-menu .nav-inner a:hover {
+          color: var(--bs-primary); }
+      #header .nav-menu .nav-inner .nav-logo {
+        padding: 0 20px;
+        flex: 1;
+        text-align: center;
+        max-width: 300px; }
+        #header .nav-menu .nav-inner .nav-logo img {
+          max-height: 60px; }
+  #header .secondary-navigation .nav-menu {
+    display: flex; }
+    #header .secondary-navigation .nav-menu > a {
+      flex: 1; }
+    @media (max-width: 992px) {
+      #header .secondary-navigation .nav-menu {
+        padding: 0 15px; } }
+    #header .secondary-navigation .nav-menu .mobile-nav-toggle {
+      position: relative;
+      border: none;
+      border-radius: 0;
+      min-height: 30px;
+      height: 30px;
+      padding: 0 5px;
+      z-index: 2;
+      background: unset;
+      border: 2px solid; }
+      #header .secondary-navigation .nav-menu .mobile-nav-toggle:focus, #header .secondary-navigation .nav-menu .mobile-nav-toggle:active {
+        box-shadow: 0 0 0 0.25rem rgba(233, 65, 93, 0.25); }
+      #header .secondary-navigation .nav-menu .mobile-nav-toggle span {
+        display: block;
+        background: #111;
+        height: 2px;
+        width: 25px;
+        margin-top: 4px;
+        margin-bottom: 4px;
+        transform: rotate(0deg);
+        position: relative;
+        left: 0;
+        opacity: 1; }
+        #header .secondary-navigation .nav-menu .mobile-nav-toggle span:nth-child(1), #header .secondary-navigation .nav-menu .mobile-nav-toggle span:nth-child(3) {
+          transition: transform 0.35s ease-in-out; }
+      #header .secondary-navigation .nav-menu .mobile-nav-toggle.is-open span:nth-child(1) {
+        position: absolute;
+        left: 5px;
+        top: 8px;
+        transform: rotate(135deg);
+        opacity: 0.9; }
+      #header .secondary-navigation .nav-menu .mobile-nav-toggle.is-open span:nth-child(2) {
+        height: 3px;
+        visibility: hidden;
+        background-color: transparent; }
+      #header .secondary-navigation .nav-menu .mobile-nav-toggle.is-open span:nth-child(3) {
+        position: absolute;
+        left: 5px;
+        top: 8px;
+        transform: rotate(-135deg);
+        opacity: 0.9; }
+  #header .secondary-navigation img {
+    padding: 0;
+    margin: 0;
+    max-height: 40px; }

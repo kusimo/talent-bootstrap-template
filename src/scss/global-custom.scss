@@ -1,0 +1,56 @@
+/** Reset Bootstrap Global variables ***/
+a {
+    &:hover {
+      color: $primary;
+    }
+    &:focus {
+        color: rgba($primary, .5);
+    }
+  
+    &:focus-visible {
+      outline: 1px solid rgba($primary, .5);
+    }
+  }
+  
+  .btn,
+  .form-control {
+    border-radius: 0;
+  }
+  
+  .btn-primary {
+    color: #fff;
+    background-color: $primary;
+    border-color: $primary;
+  
+    &:hover {
+      filter: brightness(85%) saturate(150%);
+      background-color: $primary;
+      border-color: $primary;
+    }
+  
+    &:focus,&:focus-visible {
+      background-color: $primary;
+     box-shadow:   0 0 0 0.25rem rgba($primary, .5);
+    }
+  
+    &:active {
+      background-color: $primary;
+    }
+  }
+  
+  input,
+  textarea,
+  .form-control {
+    &:hover {
+      filter: brightness(85%) saturate(150%);
+      background-color: unset;
+    }
+  
+    &:focus,&:focus-visible {
+      box-shadow:   0 0 0 0.25rem rgba($primary, .1);
+    }
+  
+    &:active {
+      border-color: $primary;
+    }
+  }
